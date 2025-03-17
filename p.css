@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5e9d7; /* Warm beige */
+    color: #4b2e2a; /* Dark brown */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 10px; /* Add padding for smaller screens */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Adjust font size for smaller screens */
+    color: #b77b5b; /* Burnt sienna */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1em; /* Adjust font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-image {
+    margin: 20px 0;
+    width: 150px; /* Slightly smaller for phones */
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid #b77b5b; /* Adjust border size */
+    object-fit: cover;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.2em; /* Adjust font size for phones */
+    font-weight: bold;
+    margin: 15px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.skill-stack {
+    text-align: center;
+    font-size: 1em; /* Adjust font size */
+    font-weight: bold;
+    color: #8c5a44; /* Chocolate brown */
+    margin: 15px 10px; /* Add padding for smaller screens */
+    padding: 10px;
+    background-color: #e8ceb2; /* Light tan for emphasis */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow size */
+}
+
+/* Media Query for Smaller Screens (Phones) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; /* Slightly smaller font size */
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .profile-image {
+        width: 130px; /* Smaller profile image */
+        height: 130px;
+    }
+
+    .title {
+        font-size: 1em; /* Adjusted for better visibility */
+    }
+
+    .skill-stack {
+        font-size: 0.9em; /* Slightly smaller text */
+        margin: 10px 10px;
+        padding: 8px;
+    }
+}
+
+.about-me {
+    margin: 20px 10px;
+    padding: 15px;
+    background-color: #e8ceb2; /* Light tan */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 80%; /* Make it responsive */
+    max-width: 800px; /* Limit the size for larger screens */
+}
+
+.about-me h2 {
+    font-size: 1.5em;
+    color: #b77b5b; /* Burnt sienna */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 1em;
+    color: #4b2e2a; /* Dark brown */
+    text-align: justify; /* For a clean and organized look */
+    line-height: 1.6;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* My Projects Section */
+.my-projects {
+    margin: 20px 10px;
+    padding: 15px;
+    background-color: #e8ceb2; /* Light tan */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 80%;
+    max-width: 800px; /* Limit size for larger screens */
+}
+
+.my-projects h2 {
+    font-size: 1.5em;
+    color: #b77b5b; /* Burnt sienna */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.my-projects p, .my-projects h3 {
+    font-size: 1em;
+    color: #4b2e2a; /* Dark brown */
+    text-align: center;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-link {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #8c5a44; /* Chocolate brown */
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project-link:hover {
+    color: #b77b5b; /* Burnt sienna */
+    text-decoration: underline;
+}
+
+/* Video Gallery */
+.video-gallery {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stack videos vertically */
+    gap: 20px; /* Space between videos */
+    align-items: center; /* Center videos horizontally */
+}
+
+.video {
+    width: 100%;
+    max-width: 800px; /* Consistent size for all videos */
+    height: 450px;
+    border: 5px solid #b77b5b; /* Brown frame */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures a consistent aspect ratio */
+}
+.video-gallery {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stack videos vertically */
+    gap: 20px; /* Space between videos */
+    align-items: center; /* Center videos horizontally */
+}
+
+.video {
+    width: 100%;
+    max-width: 800px; /* Consistent size for larger screens */
+    aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
+    border: 5px solid #b77b5b; /* Brown frame */
+    border-radius: 8px;
+    object-fit: contain; /* Ensures the entire video fits */
+}
+
+/* Media Query for Smaller Screens (Phones) */
+@media (max-width: 768px) {
+    .video {
+        width: 100%; /* Full width for phones */
+        aspect-ratio: 16 / 9; /* Keep the same ratio */
+        max-height: auto; /* Let height adjust */
+    }
+}
+/* Contacts Section */
+.contacts {
+    margin: 20px 10px;
+    padding: 15px;
+    background-color: #e8ceb2; /* Light tan */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 85%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 1.8em;
+    color: #b77b5b; /* Burnt sienna */
+    margin-bottom: 10px;
+}
+
+.contacts p {
+    font-size: 1em;
+    color: #4b2e2a; /* Dark brown */
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-options {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: center;
+    gap: 20px; /* Space between frames */
+}
+
+.contact-frame {
+    width: 200px; /* Increased frame size */
+    height: 100px; /* Taller frame */
+    background-color: #b77b5b; /* Burnt sienna */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column; /* Stack title and info vertically */
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-frame:hover {
+    transform: scale(1.1); /* Slight zoom-in on hover */
+    background-color: #8c5a44; /* Darker brown on hover */
+}
+
+.contact-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    font-size: 0.9em;
+}
